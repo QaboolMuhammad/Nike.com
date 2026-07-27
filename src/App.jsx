@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
-import { BagProvider } from "./context/BagContext.jsx";
+import { BagProvider } from "./Context/BagContext.jsx";
 import Layout from "./components/Layout.jsx";
 import Hero from "./components/Hero.jsx";
 import BackToSchool from "./components/BackToSchool.jsx";
