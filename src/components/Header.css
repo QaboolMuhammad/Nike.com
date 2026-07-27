@@ -1,0 +1,464 @@
+/* ================================
+   STRIDE HEADER
+================================ *//* ================================
+   COMPLETE STICKY HEADER
+================================ */
+
+/* ================================
+   TOP UTILITY BAR
+================================ */
+
+.header-topbar {
+  height: 36px;
+  padding: 0 62px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f5f5f5;
+}
+
+.topbar-brands {
+  display: flex;
+  align-items: center;
+  gap: 27px;
+}
+
+.topbar-brand-symbol {
+  width: 22px;
+  height: 22px;
+  display: grid;
+  place-items: center;
+  color: white;
+  background: #111;
+  border-radius: 50%;
+  font-size: 11px;
+  font-style: italic;
+  font-weight: 900;
+}
+
+.topbar-arrow {
+  color: #111;
+  font-size: 23px;
+  line-height: 1;
+  transform: skewX(-12deg);
+}
+
+.topbar-links {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.topbar-links a {
+  color: #111;
+  text-decoration: none;
+}
+
+.topbar-links a:hover {
+  color: #777;
+}
+
+.topbar-divider {
+  width: 1px;
+  height: 14px;
+  background: #333;
+}
+
+/* ================================
+   MAIN NAVBAR
+================================ */
+
+.store-main-header {
+  min-height: 74px;
+  padding: 0 61px;
+
+  display: grid;
+  grid-template-columns: 180px 1fr 330px;
+  align-items: center;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  background: white;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.header-logo-link {
+  width: fit-content;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-logo-image {
+  width: 75px;
+  height: 40px;
+  display: block;
+  object-fit: contain;
+  object-position: left center;
+}
+
+.store-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.store-navigation a {
+  padding: 27px 0 24px;
+  color: #111;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  white-space: nowrap;
+}
+
+.store-navigation a:hover {
+  border-bottom-color: #111;
+}
+
+.store-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 11px;
+}
+
+.header-search {
+  width: 210px;
+  height: 46px;
+  padding: 0 14px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  background: #f5f5f5;
+  border-radius: 30px;
+}
+
+.header-search:hover {
+  background: #e7e7e7;
+}
+
+.header-search:focus-within {
+  outline: 2px solid #111;
+  background: white;
+}
+
+.header-search svg {
+  width: 23px;
+  height: 23px;
+  flex-shrink: 0;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+.header-search input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 16px;
+}
+
+.header-search input::placeholder {
+  color: #777;
+}
+
+.header-icon-button {
+  width: 43px;
+  height: 43px;
+  padding: 9px;
+  display: grid;
+  place-items: center;
+  position: relative;
+  color: #111;
+  background: transparent;
+  border: none;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+.header-search {
+  margin: 0;
+  border: none;
+}
+
+.store-navigation a.is-active {
+  border-bottom-color: #111;
+}
+
+.header-icon-button:hover {
+  background: #eeeeee;
+}
+
+.header-icon-button svg {
+  width: 25px;
+  height: 25px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.header-bag-count {
+  width: 18px;
+  height: 18px;
+  display: grid;
+  place-items: center;
+  position: absolute;
+  top: 1px;
+  right: 0;
+  color: white;
+  background: #111;
+  border-radius: 50%;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.header-menu-button {
+  width: 42px;
+  height: 42px;
+  display: none;
+  color: #111;
+  background: transparent;
+  border: none;
+  border-radius: 50%;
+  font-size: 22px;
+}
+
+/* ================================
+   BLACK PROMOTION BAR
+================================ */
+
+.header-promotion {
+  min-height: 100px;
+  padding: 20px 61px;
+  margin-bottom: 24px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  gap: 30px;
+
+  color: #a8ff00;
+  background: #111111;
+}
+
+.header-promotion p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.promotion-discount {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  line-height: 0.95;
+  text-align: center;
+}
+
+.promotion-discount span {
+  display: block;
+}
+
+/* Black image ko neon green karta hai */
+
+.promotion-logo-box {
+  width: 100px;
+  height: 55px;
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+  background: #111111;
+}
+
+.promotion-logo {
+  width: 90px;
+  height: 48px;
+  display: block;
+  object-fit: contain;
+
+  /*
+    White background ko black aur
+    black logo ko green banata hai.
+  */
+
+  filter:
+    invert(1)
+    sepia(1)
+    saturate(18)
+    hue-rotate(35deg)
+    brightness(1.15);
+
+  mix-blend-mode: screen;
+}
+
+.header-promotion p:last-child {
+  text-align: right;
+}
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 1200px) {
+  .store-main-header {
+    padding: 0 30px;
+    grid-template-columns: 130px 1fr 260px;
+  }
+
+  .store-navigation {
+    gap: 17px;
+    font-size: 14px;
+  }
+
+  .header-search {
+    width: 150px;
+  }
+
+  .header-promotion {
+    padding: 20px 30px;
+  }
+
+  .header-promotion p {
+    font-size: 15px;
+  }
+}
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 900px) {
+  .header-topbar {
+    height: 32px;
+    padding: 0 18px;
+  }
+
+  .topbar-links a:nth-of-type(1),
+  .topbar-links a:nth-of-type(2) {
+    display: none;
+  }
+
+  .store-main-header {
+    min-height: 64px;
+    padding: 0 18px;
+    grid-template-columns: 1fr auto;
+  }
+
+  .header-logo-image {
+    width: 65px;
+    height: 34px;
+  }
+
+  .store-navigation {
+    padding: 20px;
+    display: none;
+    position: absolute;
+    top: 96px;
+    left: 0;
+    right: 0;
+    align-items: stretch;
+    flex-direction: column;
+    gap: 0;
+    background: white;
+    border-top: 1px solid #eeeeee;
+    box-shadow: 0 16px 28px rgba(0, 0, 0, 0.15);
+  }
+
+  .store-navigation.menu-open {
+    display: flex;
+  }
+
+  .store-navigation a {
+    padding: 13px;
+  }
+
+  .header-search {
+    width: 44px;
+    padding: 0 10px;
+  }
+
+  .header-search input {
+    display: none;
+  }
+
+  .header-menu-button {
+    display: block;
+  }
+
+  .header-promotion {
+    min-height: 82px;
+    padding: 15px 18px;
+    grid-template-columns: 1fr auto 1fr;
+  }
+
+  .promotion-discount {
+    display: none;
+  }
+
+  .header-promotion p {
+    font-size: 12px;
+  }
+
+  .promotion-logo {
+    width: 65px;
+  }
+}
+
+@media (max-width: 520px) {
+  .topbar-brands {
+    gap: 14px;
+  }
+
+  .topbar-links {
+    gap: 8px;
+    font-size: 10px;
+  }
+
+  .topbar-divider {
+    display: none;
+  }
+
+  .store-main-header {
+    padding: 0 12px;
+  }
+
+  .store-actions {
+    gap: 2px;
+  }
+
+  .header-icon-button,
+  .header-menu-button {
+    width: 38px;
+    height: 38px;
+  }
+
+  .header-promotion {
+    min-height: 70px;
+    padding: 12px;
+  }
+
+  .header-promotion p {
+    font-size: 10px;
+  }
+
+  .promotion-logo {
+    width: 55px;
+    height: 30px;
+  }
+}

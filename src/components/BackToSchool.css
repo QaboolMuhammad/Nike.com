@@ -1,0 +1,382 @@
+.back-to-school {
+  width: 100%;
+  padding: 110px 3% 50px;
+  box-sizing: border-box;
+  background: #ffffff;
+}
+
+.back-to-school-heading {
+  text-align: center;
+  margin-bottom: 34px;
+}
+
+.back-to-school-heading h2 {
+  margin: 0;
+  color: #111111;
+  font-size: clamp(3rem, 5.5vw, 5.5rem);
+  font-weight: 900;
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+}
+
+.back-to-school-heading p {
+  margin: 14px 0 0;
+  color: #111111;
+  font-size: 1.2rem;
+}
+
+.school-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.school-card {
+  position: relative;
+  min-height: 570px;
+  overflow: hidden;
+  background: #eeeeee;
+}
+
+.school-card > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 570px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.school-card:hover > img {
+  transform: scale(1.025);
+}
+
+.school-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.58) 0%,
+    rgba(0, 0, 0, 0.08) 48%,
+    transparent 72%
+  );
+}
+
+.school-card-content {
+  position: absolute;
+  left: 60px;
+  right: 40px;
+  bottom: 58px;
+  z-index: 2;
+  color: #ffffff;
+}
+
+.school-card-content p {
+  max-width: 390px;
+  margin: 0 0 28px;
+  font-size: clamp(1.25rem, 1.7vw, 1.75rem);
+  line-height: 1.22;
+}
+
+.school-card-content button {
+  padding: 13px 24px;
+  border: 0;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #111111;
+  font: inherit;
+  font-size: 1.05rem;
+  cursor: pointer;
+}
+
+.school-card-content button:hover {
+  background: #dddddd;
+}
+
+.school-logo-banner {
+  width: 100%;
+  margin-top: 80px;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.school-logo-banner img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+  .back-to-school {
+    padding-top: 75px;
+  }
+
+  .school-card {
+    min-height: 470px;
+  }
+
+  .school-card > img {
+    min-height: 470px;
+  }
+
+  .school-card-content {
+    left: 28px;
+    right: 24px;
+    bottom: 35px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+  .back-to-school {
+    padding: 60px 16px 30px;
+  }
+
+  .back-to-school-heading h2 {
+    font-size: 3rem;
+  }
+
+  .back-to-school-heading p {
+    font-size: 1rem;
+  }
+
+  .school-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .school-card,
+  .school-card > img {
+    min-height: 520px;
+  }
+
+  .school-logo-banner {
+    min-height: 210px;
+    height: 100px;
+  }
+}
+
+.training-category-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  margin-top: 0;
+  padding: 0;
+}
+
+.training-category-card {
+  position: relative;
+  height: 490px;
+  overflow: hidden;
+  background: #222222;
+  display: block;
+  text-decoration: none;
+}
+
+.training-category-card > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.training-category-card:hover > img {
+  transform: scale(1.025);
+}
+
+.training-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.52) 0%,
+    rgba(0, 0, 0, 0.08) 55%,
+    transparent 75%
+  );
+}
+
+.training-card-content {
+  position: absolute;
+  left: 60px;
+  bottom: 60px;
+  z-index: 2;
+  color: #ffffff;
+}
+
+.training-card-content p {
+  margin: 0;
+  font-size: clamp(1.3rem, 1.7vw, 1.9rem);
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+.training-card-content h3 {
+  margin: 2px 0 0;
+  color: #ffffff;
+  font-size: clamp(1.4rem, 1.8vw, 2rem);
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+  .training-category-card {
+    height: 420px;
+  }
+
+  .training-card-content {
+    left: 30px;
+    bottom: 35px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 650px) {
+  .training-category-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .training-category-card {
+    height: 450px;
+  }
+
+  .training-card-content {
+    left: 24px;
+    right: 20px;
+    bottom: 28px;
+  }
+}
+.school-shoes-section {
+  position: relative;
+  width: calc(100% + 6vw);
+  margin-left: -3vw;
+  padding: 90px 0 22px;
+  box-sizing: border-box;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.school-shoes-navigation {
+  position: absolute;
+  top: 18px;
+  right: 48px;
+  z-index: 5;
+  display: flex;
+  gap: 12px;
+}
+
+.school-shoes-navigation button {
+  width: 60px;
+  height: 60px;
+  border: 0;
+  border-radius: 50%;
+  background: #eeeeee;
+  color: #111111;
+  font-size: 2.3rem;
+  line-height: 1;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.school-shoes-navigation button:hover {
+  background: #dddddd;
+  transform: scale(1.05);
+}
+
+.school-shoes-slider {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  width: 100%;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  scroll-snap-type: x mandatory;
+}
+
+.school-shoes-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.school-shoe-card {
+  flex: 0 0 20%;
+  min-width: 340px;
+  height: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  scroll-snap-align: start;
+}
+
+.school-shoe-card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 25px 5px;
+  box-sizing: border-box;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+}
+
+.school-shoes-shop-button {
+  display: block;
+  margin: 18px auto 0;
+  padding: 13px 24px;
+  border: 0;
+  border-radius: 999px;
+  background: #111111;
+  color: #ffffff;
+  font: inherit;
+  font-size: 1.05rem;
+  cursor: pointer;
+}
+
+.school-shoes-shop-button:hover {
+  background: #333333;
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+  .school-shoe-card {
+    flex-basis: 33.333%;
+    min-width: 300px;
+    height: 310px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 650px) {
+  .school-shoes-section {
+    padding-top: 80px;
+  }
+
+  .school-shoes-navigation {
+    top: 15px;
+    right: 18px;
+  }
+
+  .school-shoes-navigation button {
+    width: 50px;
+    height: 50px;
+  }
+
+  .school-shoe-card {
+    flex-basis: 78%;
+    min-width: 270px;
+    height: 290px;
+  }
+}

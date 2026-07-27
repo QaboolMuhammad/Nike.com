@@ -1,0 +1,709 @@
+/* HERO VIDEO */
+
+.page-container {
+  padding: 0;
+}
+
+.video-hero {
+  width: 100%;
+  min-height: 665px;
+  position: relative;
+  overflow: hidden;
+  background: black;
+}
+
+.hero-video {
+  width: 100%;
+  height: 665px;
+  display: block;
+  object-fit: cover;
+}
+
+.video-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.72),
+    rgba(0, 0, 0, 0.05)
+  );
+}
+
+.video-content {
+  max-width: 750px;
+  padding: 55px;
+  position: absolute;
+  left: 0;
+  bottom: 25px;
+  color: white;
+}
+
+.video-content p {
+  margin: 0 0 14px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.video-content h1 {
+  max-width: 700px;
+  margin: 0;
+  font-size: clamp(55px, 7vw, 105px);
+  line-height: 0.88;
+  letter-spacing: -6px;
+  font-weight: 950;
+}
+
+.video-content span {
+  margin: 22px 0;
+  display: block;
+  font-size: 18px;
+}
+
+.video-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.video-buttons button {
+  padding: 13px 22px;
+  border: none;
+  border-radius: 30px;
+  color: #111111;
+  background: white;
+  font-weight: bold;
+}
+
+.video-buttons button:hover {
+  color: white;
+  background: #111111;
+}
+
+.video-buttons .watch-button {
+  color: white;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid white;
+}
+
+/* THREE IMAGES *//* ================================
+   THREE FEATURE IMAGES
+================================ */
+
+.feature-images {
+  width: 100%;
+  padding: 70px 3%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  background: #ffffff;
+}
+
+.feature-card {
+  min-width: 0;
+  background: #ffffff;
+}
+
+.feature-image-wrapper {
+  width: 100%;
+  height: 360px;
+  overflow: hidden;
+  background: #eeeeee;
+}
+
+.feature-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.feature-card:hover .feature-image-wrapper img {
+  transform: scale(1.04);
+}
+
+.feature-card-content {
+  padding: 32px 60px 20px;
+  color: #111111;
+  background: #ffffff;
+}
+
+.feature-card-content h2 {
+  margin: 0 0 12px;
+  font-size: clamp(24px, 2vw, 32px);
+  line-height: 1.1;
+  font-weight: 500;
+  letter-spacing: -1px;
+}
+
+.feature-card-content p {
+  margin: 0;
+  color: #222222;
+  font-size: 17px;
+  line-height: 1.55;
+}
+
+/* ================================
+   BEST IN CLASS HEADING
+================================ */
+
+.best-class-section {
+  min-height: 330px;
+  padding: 100px 24px 70px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  text-align: center;
+  background: #ffffff;
+}
+
+.best-class-section h2 {
+  margin: 0;
+  color: #111111;
+  font-size: clamp(55px, 7vw, 100px);
+  line-height: 0.9;
+  font-weight: 950;
+  letter-spacing: -6px;
+}
+
+.best-class-section p {
+  max-width: 750px;
+  margin: 18px auto 0;
+  color: #222222;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1100px) {
+  .store-main-header {
+    grid-template-columns: 130px 1fr 270px;
+  }
+
+  .store-navigation {
+    gap: 17px;
+    font-size: 14px;
+  }
+
+  .header-search {
+    width: 150px;
+  }
+}
+
+@media (max-width: 900px) {
+  .store-main-header {
+    min-height: 64px;
+    padding: 0 18px;
+    grid-template-columns: 1fr auto;
+  }
+
+  .store-navigation {
+    padding: 20px;
+    display: none;
+    position: absolute;
+    top: 63px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: stretch;
+    background: white;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+  }
+
+  .store-navigation.menu-open {
+    display: flex;
+  }
+
+  .store-navigation a {
+    padding: 12px;
+  }
+
+  .header-search {
+    width: 44px;
+    padding: 0 10px;
+  }
+
+  .header-search input {
+    display: none;
+  }
+
+  .header-menu-button {
+    display: block;
+  }
+
+  .video-hero,
+  .hero-video {
+    min-height: 600px;
+    height: 600px;
+  }
+
+  .video-content {
+    padding: 30px 22px;
+  }
+
+  .feature-images {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-card {
+    min-height: 540px;
+  }
+}
+
+@media (max-width: 500px) {
+  .header-logo-image {
+    width: 58px;
+  }
+
+  .store-actions {
+    gap: 2px;
+  }
+
+  .video-content h1 {
+    font-size: 52px;
+    letter-spacing: -4px;
+  }
+
+  .video-buttons {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .feature-images {
+    padding: 25px 12px;
+  }
+
+  .feature-card {
+    min-height: 470px;
+  }
+}
+/* ================================
+   SECOND WIDE VIDEO
+================================ */
+
+.second-video-section {
+  width: calc(100% - 40px);
+  height: 580px;
+  margin: 40px auto 0;
+  position: relative;
+  overflow: hidden;
+  background: #111111;
+}
+
+.second-video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.second-video-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.72),
+    rgba(0, 0, 0, 0.1)
+  );
+}
+
+.second-video-content {
+  max-width: 750px;
+  padding: 60px;
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  color: white;
+}
+
+.second-video-content p {
+  margin: 0 0 10px;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.second-video-content h2 {
+  margin: 0;
+  font-size: clamp(50px, 6vw, 90px);
+  line-height: 0.9;
+  letter-spacing: -5px;
+}
+
+.second-video-content span {
+  margin: 18px 0 25px;
+  display: block;
+  font-size: 18px;
+}
+
+.second-video-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.second-video-buttons button {
+  padding: 12px 22px;
+  border: none;
+  border-radius: 30px;
+  color: #111111;
+  background: white;
+  font-weight: bold;
+}
+
+.second-video-buttons .second-play-button {
+  color: white;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid white;
+}
+
+/* ================================
+   RUNNING HEADING
+================================ */
+
+.running-heading {
+  padding: 90px 20px 55px;
+  text-align: center;
+}
+
+.running-heading p {
+  margin: 0 0 13px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.running-heading h2 {
+  margin: 0;
+  font-size: clamp(45px, 7vw, 90px);
+  line-height: 0.9;
+  letter-spacing: -6px;
+  font-style: italic;
+}
+
+.running-heading span {
+  max-width: 650px;
+  margin: 22px auto 0;
+  display: block;
+  color: #666666;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+/* ================================
+   THREE RUNNING CARDS
+================================ */
+
+.running-card-grid {
+  padding: 0 20px 95px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.running-product-card {
+  min-width: 0;
+}
+
+.running-image {
+  display: block;
+  height: 520px;
+  overflow: hidden;
+  background: #eeeeee;
+}
+
+.running-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.running-product-card:hover .running-image img {
+  transform: scale(1.04);
+}
+
+.running-card-information {
+  padding: 25px 30px 10px;
+}
+
+.running-card-information p {
+  margin: 0 0 14px;
+  font-size: 15px;
+}
+
+.running-card-information h3 {
+  min-height: 76px;
+  margin: 0 0 22px;
+  font-size: 25px;
+  line-height: 1.25;
+  font-weight: 500;
+}
+
+.running-card-information a,
+.running-shop-button {
+  padding: 11px 18px;
+  display: inline-block;
+  color: white;
+  background: #111111;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.running-shop-button:hover {
+  background: #444444;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 900px) {
+  .second-video-section {
+    width: 100%;
+    height: 570px;
+  }
+
+  .second-video-content {
+    padding: 35px 24px;
+  }
+
+  .running-card-grid {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .running-image {
+    height: 580px;
+  }
+
+  .running-card-information h3 {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 550px) {
+  .second-video-section {
+    height: 530px;
+  }
+
+  .second-video-content h2 {
+    font-size: 49px;
+    letter-spacing: -3px;
+  }
+
+  .second-video-buttons {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .running-heading {
+    padding: 70px 20px 40px;
+  }
+
+  .running-heading h2 {
+    font-size: 48px;
+    letter-spacing: -3px;
+  }
+
+  .running-card-grid {
+    padding: 0 12px 70px;
+  }
+
+  .running-image {
+    height: 450px;
+  }
+
+  .running-card-information {
+    padding: 20px 5px;
+  }
+}
+
+/* Buttons used by the current Hero.jsx cards */
+
+.feature-card-content button,
+.running-card-information button {
+  padding: 11px 19px;
+  display: inline-block;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.feature-card-content button {
+  color: #111111;
+  background: #ffffff;
+}
+
+.feature-card-content button:hover {
+  color: #ffffff;
+  background: #111111;
+}
+
+.running-card-information button {
+  color: #ffffff;
+  background: #111111;
+}
+
+.running-card-information button:hover {
+  background: #444444;
+}
+@media (max-width: 900px) {
+  .feature-images {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    padding: 55px 20px;
+  }
+
+  .feature-image-wrapper {
+    height: 520px;
+  }
+
+  .feature-card-content {
+    padding: 22px 10px 0;
+  }
+
+  .best-class-section {
+    min-height: 280px;
+    padding: 75px 20px 55px;
+  }
+
+  .best-class-section h2 {
+    letter-spacing: -4px;
+  }
+}
+
+@media (max-width: 550px) {
+  .feature-images {
+    padding: 40px 12px;
+  }
+
+  .feature-image-wrapper {
+    height: 390px;
+  }
+
+  .feature-card-content {
+    padding: 20px 5px 0;
+  }
+
+  .feature-card-content h2 {
+    font-size: 25px;
+  }
+
+  .feature-card-content p {
+    font-size: 16px;
+  }
+
+  .best-class-section {
+    min-height: 250px;
+    padding: 60px 18px 45px;
+  }
+
+  .best-class-section h2 {
+    font-size: 52px;
+    letter-spacing: -3px;
+  }
+
+  .best-class-section p {
+    font-size: 16px;
+  }
+}
+/* THREE FEATURE CARDS FONT FIX */
+
+.feature-images,
+.feature-images *,
+.feature-card,
+.feature-card * {
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif !important;
+}
+
+/* HEADINGS */
+
+.feature-card h2,
+.feature-card h3,
+.feature-card-content h2,
+.feature-card-content h3 {
+  margin: 0 0 10px;
+  color: #111111;
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif !important;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+
+/* DESCRIPTION TEXT */
+
+.feature-card p,
+.feature-card-content p {
+  margin: 0;
+  color: #111111;
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif !important;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 1.45;
+  letter-spacing: 0;
+}
+
+/* TEXT AREA SPACING */
+
+.feature-card-content {
+  padding: 30px 60px 45px;
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+  .feature-card h2,
+  .feature-card h3,
+  .feature-card-content h2,
+  .feature-card-content h3 {
+    font-size: 26px;
+  }
+
+  .feature-card p,
+  .feature-card-content p {
+    font-size: 18px;
+  }
+
+  .feature-card-content {
+    padding: 25px 30px 40px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .feature-card h2,
+  .feature-card h3,
+  .feature-card-content h2,
+  .feature-card-content h3 {
+    font-size: 24px;
+  }
+
+  .feature-card p,
+  .feature-card-content p {
+    font-size: 17px;
+  }
+
+  .feature-card-content {
+    padding: 22px 18px 35px;
+  }
+}

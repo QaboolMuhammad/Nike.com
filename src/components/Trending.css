@@ -1,0 +1,129 @@
+.trending-section {
+  width: 100%;
+  min-height: 760px;
+  padding: 150px 6% 100px;
+  box-sizing: border-box;
+  background: #ffffff;
+  color: #111111;
+}
+
+.trending-heading {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.trending-heading h2 {
+  margin: 0;
+  color: #111111;
+  font-size: clamp(4rem, 6vw, 6rem);
+  font-weight: 900;
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+}
+
+.trending-heading p {
+  margin: 15px auto 0;
+  max-width: 850px;
+  color: #111111;
+  font-size: 1.15rem;
+  line-height: 1.5;
+}
+
+.trending-grid {
+  width: min(1200px, 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  column-gap: 24px;
+  row-gap: 65px;
+}
+
+.trending-item {
+  display: block;
+  min-width: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #111111;
+  font-family: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.trending-image-wrapper {
+  width: 100%;
+  height: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trending-image-wrapper img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.25s ease;
+}
+
+.trending-item:hover img {
+  transform: scale(1.12);
+}
+
+.trending-item span {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.35;
+  text-align: center;
+}
+
+/* Tablet */
+
+@media (max-width: 1000px) {
+  .trending-section {
+    padding: 100px 5% 80px;
+  }
+
+  .trending-grid {
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 50px;
+  }
+
+  .trending-image-wrapper {
+    height: 100px;
+    
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .trending-section {
+    min-height: auto;
+    padding: 75px 20px 70px;
+  }
+
+  .trending-heading {
+    margin-bottom: 40px;
+  }
+
+  .trending-heading h2 {
+    font-size: 3.6rem;
+  }
+
+  .trending-heading p {
+    font-size: 1rem;
+  }
+
+  .trending-grid {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 25px;
+    row-gap: 42px;
+  }
+
+  .trending-image-wrapper {
+    height: 90px;
+  }
+}

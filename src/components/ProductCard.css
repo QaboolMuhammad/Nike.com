@@ -1,0 +1,120 @@
+.product-card {
+  position: relative;
+  min-width: 0;
+}
+
+.product-card-media {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: #f2f2f2;
+}
+
+.product-card-media img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.product-card:hover .product-card-media img {
+  transform: scale(1.045);
+}
+
+.product-card-badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  padding: 6px 12px;
+  color: #ffffff;
+  background: #d51c42;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+}
+
+.product-card-favorite {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  color: #111111;
+  background: rgba(255, 255, 255, 0.95);
+  border: none;
+  border-radius: 50%;
+  font-size: 22px;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.product-card-favorite:hover {
+  transform: scale(1.08);
+}
+
+.product-card-favorite.is-active {
+  color: #d51c42;
+}
+
+.product-card-details {
+  padding: 16px 2px 0;
+}
+
+.product-card-details a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.product-card-details h3 {
+  margin: 0 0 4px;
+  color: #111111;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.product-card-details p {
+  margin: 0 0 10px;
+  color: #666666;
+  font-size: 14px;
+}
+
+.product-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.product-card-price {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  color: #111111;
+  font-size: 15px;
+}
+
+.product-card-price s {
+  color: #999999;
+  font-size: 13px;
+}
+
+.product-card-add {
+  padding: 9px 14px;
+  color: #ffffff;
+  background: #111111;
+  border: none;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.product-card-add:hover {
+  background: #333333;
+}
