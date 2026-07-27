@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useBag } from "../context/BagContext.jsx";
+import { useBag } from "../Context/BagContext.jsx";
 import "./ProductCard.css";
 
 function ProductCard({ product, index = 0 }) {

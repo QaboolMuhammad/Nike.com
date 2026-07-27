@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useBag } from "../context/BagContext.jsx";
+import { useBag } from "../Context/BagContext.jsx";
 import "./BagPage.css";
 
 function BagPage() {

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Outlet, useLocation, useNavigate } from "react-router-dom";
 import Header from "./Header.jsx";
 import Footer from "./Footer.jsx";
-import { useBag } from "../context/BagContext.jsx";
+import { useBag } from "../Context/BagContext.jsx";
 import { useScrollReveal } from "../hooks/useScrollReveal.js";
 
 function Layout() {

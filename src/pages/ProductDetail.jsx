@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { getProductById, PRODUCTS } from "../data/products.js";
-import { useBag } from "../context/BagContext.jsx";
+import { useBag } from "../Context/BagContext.jsx";
 import ProductCard from "../components/ProductCard.jsx";
 import "./ProductDetail.css";
 

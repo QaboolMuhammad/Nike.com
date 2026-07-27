@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { PRODUCTS } from "../data/products.js";
-import { useBag } from "../context/BagContext.jsx";
+import { useBag } from "../Context/BagContext.jsx";
 import ProductCard from "../components/ProductCard.jsx";
 import "./CategoryPage.css";
 

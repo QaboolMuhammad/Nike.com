@@ -2,7 +2,7 @@ import { useRef } from "react";
 import { Link } from "react-router-dom";
 import "./ShoeCollection.css";
 import { getProductsByCategory } from "../data/products.js";
-import { useBag } from "../context/BagContext.jsx";
+import { useBag } from "../Context/BagContext.jsx";
 
 const collectionItems = getProductsByCategory("men").slice(0, 6);
 
